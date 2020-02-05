@@ -72,7 +72,9 @@
 </template>
 
 <script>
+  
   export default {
+    name:'index',
     methods: {
       tableRowClassName({row, rowIndex}) {
         if (rowIndex === 1) {
@@ -81,6 +83,12 @@
           return 'success-row';
         }
         return '';
+      },
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
       }
     },
     data() {
