@@ -4,7 +4,7 @@
       <el-aside width="300px">
         <el-row class="tac">
           <el-col :span="12">
-               <ul>
+              <ul>
                 <li class="p_item" v-for="(item,index) in items" :key="index">
                   <router-link :to="item.url" class="p_title" > 
                     <i class="iconfont" :class="item.icon"></i>{{item.title}}
